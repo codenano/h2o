@@ -1,0 +1,24 @@
+doctype html
+html(ng-app='h2o')
+  head
+    title are you lost?
+    meta(content='width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0', name='viewport')
+    meta(content='yes', name='apple-mobile-web-app-capable')
+    meta(content='chrome=1', http-equiv='X-UA-Compatible')
+    base(href='/')
+    link(rel='shortcut icon', href='/images/favicon.png')   
+    link(rel='stylesheet', href='/scripts/lib/bootstrap-sass/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/scripts/css/app.css')
+
+    body
+    #wrapper
+      .header
+        a#logo(href='/', title='home') Inicio
+
+
+    .contaner-fluid
+      .row
+       .col-xs-4
+       .col-xs-4
+          h3 Not found
+          p the url is not found on the server

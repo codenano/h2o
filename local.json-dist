@@ -1,0 +1,15 @@
+{
+    "domain": "http://localhost",
+    "port": 80,
+    "socket": 1337,
+    "session_secret": "signos",
+    "session_cookie": "session",
+    "itemlocation": "./public/images/icon/",
+    "mailuser": "usermail",
+    "mailpass": "userpass",   
+    "db": "false",
+    "dbtype": "dbtype",
+    "dbname": "dbname",
+    "dbuser": "dbuser",
+    "dbpass": "dbpass"
+}

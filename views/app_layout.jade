@@ -1,0 +1,48 @@
+doctype html
+html(ng-app='h2o')
+  head
+    title
+    meta(content='width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0', name='viewport')
+    meta(content='yes', name='apple-mobile-web-app-capable')
+    meta(content='chrome=1', http-equiv='X-UA-Compatible')
+    base(href='/')
+    link(rel='shortcut icon', href='/images/favicon.png')
+    link(rel='stylesheet', href='/scripts/lib/bootstrap-sass/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/scripts/lib/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/scripts/css/app.css')
+    body(ng-controller='h2o')
+      nav(class="navbar navbar-default navbar-fixed-top" role="navigation")
+       .container-fluid
+        .navbar-header
+          button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+            .sr-only
+              Toggle navigation
+             span(class="icon-bar")
+          a(id="logoapp" class="navbar-brand logoapp")
+        div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
+          ul(id="menu_list" class="nav navbar-nav")
+          ul(class="nav navbar-nav navbar-right")
+           li#loggedInfo.dropdown
+            a.navbar-link.dropdown-toggle(href='' data-toggle="dropdown")
+                |
+            ul.dropdown-menu.dropdown-menu
+              li(role='presentation')
+                a(role='menuitem', tabindex='-1', href='') In
+              li(role='presentation')
+                a(role='menuitem', tabindex='0', href='') Out
+      #loadCont
+        #load
+      block content
+      nav(class="navbar navbar-default navbar-fixed-bottom" role="navigation")
+       .container-fluid
+        .navbar-header
+
+    script(src='/scripts/dist/h2o.min.js')
+    script(src='/scripts/lib/bootstrap-calendar/js/calendar.js')
+    script(src='/scripts/directives.js')
+    script(src='/scripts/factories.js')
+    script(src='/scripts/controllers/app.js')
+    script(src='/scripts/controllers/profile.js')
+    script(src='/scripts/controllers/aguamala.js')
+    script(src='/scripts/controllers.js')
+    script(src='/scripts/app.js')

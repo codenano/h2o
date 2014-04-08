@@ -1,0 +1,6 @@
+.DS_Store
+local.json
+node_modules
+public/scripts/lib
+!.gitkeep
+dbrail/config/database.yml
