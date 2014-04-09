@@ -1,6 +1,6 @@
 .DS_Store
 local.json
 node_modules
-public/scripts/lib
 !.gitkeep
+public/scripts/lib
 dbrail/config/database.yml
